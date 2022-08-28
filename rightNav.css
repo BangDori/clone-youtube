@@ -1,0 +1,23 @@
+
+.rightNav{
+  display: flex;
+  gap: 25px;
+  margin: 0 15px 0 15px;
+  align-items: center;
+}
+
+.upload-video{
+  cursor: pointer;
+}
+
+.alert{
+  cursor: pointer;
+}
+
+.my-page{
+  cursor: pointer;
+}
+
+.my-page>img{
+  border-radius: 40px;
+}

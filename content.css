@@ -1,0 +1,92 @@
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.lnbNav{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 5vh;
+  padding: 15px;
+}
+
+.lnbNav>div{
+  display: flex;
+  border: 1px solid #ccc;
+  padding: 0 5px 0 5px;
+  margin: 0 8px 0 8px;
+  width: 42px;
+  height: 30px;
+  border-radius: 40px;
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.lnbNav>div:first-child{
+  background-color: black;
+  color: white;
+}
+
+.lnbNav>div:hover{
+  border-color: blue;
+}
+
+.content{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+.content>*{
+  display: inline-block;
+  margin: 0 15px 0 15px;
+  width: 22%;
+  height: 260px;
+}
+
+.content-item{
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.content-item-ex{
+  display: flex;
+  margin-top: 10px;
+  height: auto;
+}
+
+.content-item-info{
+  text-align:left;
+  margin: 0 0 5px 5px;
+}
+
+.content-item-img>img{
+  width: 100%;
+  height: 180px;
+}
+
+.content-item-icon>img{
+  width: 40px;
+  border-radius: 45px;
+}
+
+.content-item-title {
+  font-size: 14px;
+}
+
+.content-item-channel, .content-item-views{
+  font-size: 12px;
+  color: gray;
+}

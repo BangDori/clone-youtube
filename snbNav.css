@@ -1,0 +1,29 @@
+.snbNav{
+  position: sticky;
+  top: 75px;
+  width: 80px;
+  height: 90vh;
+  padding: 0 0 15px 0;
+  border-right: 1px solid #ccc;
+  background-color: white;
+}
+
+.snbNav-box{
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 15px 0;
+}
+
+.snbNav-box>*{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+  font-size: 12px;
+}
+
+.snbNav-bloodtrail{
+  position: absolute;
+  left: 15px;
+  bottom: 0;
+}

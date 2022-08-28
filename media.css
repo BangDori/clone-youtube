@@ -1,0 +1,12 @@
+@media(max-width: 601px) {
+  .search-box{
+    border: none;
+  }
+  .search-form>form{
+    display:none;
+  }
+
+  .snbNav{
+    display: none;
+  }
+}

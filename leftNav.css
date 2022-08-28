@@ -1,0 +1,16 @@
+.leftNav{
+  display: flex;
+  padding: 3px;
+  gap: 15px;
+  align-items: center;
+}
+
+.menu {
+  padding: 7px;
+  cursor: pointer;
+}
+
+.logo{
+  padding: 2px;
+  cursor: pointer;
+}

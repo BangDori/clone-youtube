@@ -1,0 +1,53 @@
+.mypage-bar{
+  position: absolute;
+  display: inline-block;
+  top: 63px;
+  right: 0;
+  width: 252px;
+  background-color: white;
+}
+
+.mypage-header{
+  display: flex;
+}
+
+.mypage-img{
+  padding: 15px;
+}
+
+.mypage-img>img{
+  border-radius: 50px;
+}
+
+.mypage-ex{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+}
+
+.mypage-name{
+  height: 50%;
+}
+.mypage-settings{
+  font-size: 13px;
+  color: rgba(0, 0, 255, 0.8);
+}
+
+.mypage-content-box{
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.mypage-content-box>div{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  height: 36px;
+  padding: 0 24px;
+}
+
+.mypage-content-box>div:hover{
+  background-color: #ccc;
+}

@@ -3,15 +3,21 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale: 1.0">
-    <link rel="stylesheet" href="./tag.css">
-    <link rel="stylesheet" href="./leftNav.css">
-    <link rel="stylesheet" href="./middleNav.css">
-    <link rel="stylesheet" href="./rightNav.css">
-    <link rel="stylesheet" href="./snbNav.css">
-    <link rel="stylesheet" href="./content.css">
-    <link rel="stylesheet" href="./shorts.css">
-    <link rel="stylesheet" href="./media.css">
+    <link rel="stylesheet" href="./css/tag.css">
+    <link rel="stylesheet" href="./css/leftNav.css">
+    <link rel="stylesheet" href="./css/middleNav.css">
+    <link rel="stylesheet" href="./css/rightNav.css">
+    <link rel="stylesheet" href="./css/snbNav.css">
+    <link rel="stylesheet" href="./css/content.css">
+    <link rel="stylesheet" href="./css/shorts.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/voice.css">
+    <link rel="stylesheet" href="./css/mypage.css">
     <title>Youtube</title>
+    <style media="screen">
+
+    </style>
   </head>
   <body>
     <div class="wrapper">
@@ -20,7 +26,7 @@
         <div class="gnbNav">
           <div class="leftNav">
             <div class="menu">
-              <img src="https://icons.veryicon.com/png/o/miscellaneous/template-3/menu-59.png" alt="menu" width=30px height=25px>
+              <img src="https://icons.veryicon.com/png/o/miscellaneous/template-3/menu-59.png" alt="menu" width=30px height=25px name="menu">
             </div>
             <div class="logo">
               <a href="./youtube.html"><img src="./Images/logo.png" alt="logo" title="Youtube 홈" width=91px height= 42px></a>
@@ -29,18 +35,18 @@
 
           <div class="middleNav">
             <div class="search-box">
-              <!-- <div class="js-search">
-                <img src="./Images/search_icon.png" alt="search_icon">
-              </div> -->
+              <div class="js-search">
+                <img src="./Images/search_icon.png" alt="search_icon" width=15px height=15px>
+              </div>
               <div class="search-form">
                 <form action="youtube.html" method="get">
-                  <input type="text" placeholder="검색" name="search_query">
-                  <!-- <div class="js-cancel">
-                    <img src="" alt="">
-                  </div> -->
+                  <input id="search_query" type="text" placeholder="검색" name="search_query">
                 </form>
                 <div class="search-form-keyboard">
-                  <img src="https://www.gstatic.com/inputtools/images/tia.png" alt="keyboard" width=20px height=12px>
+                  <img src="https://www.gstatic.com/inputtools/images/tia.png" alt="keyboard" width=20px height=12px onclick="alert('미구현')">
+                </div>
+                <div class="search-form-cancel">
+                  <img src="https://pic.onlinewebfonts.com/svg/img_170267.png" alt="cancel" width=12px height=12px>
                 </div>
                 <div class="search-button">
                   <img src="./Images/search_icon.png" alt="search_icon" title="검색" width=20px height=20px>
@@ -53,17 +59,162 @@
           </div>
 
           <div class="rightNav">
-            <div class="upload-video">
+            <div class="upload-video" onclick="alert('미구현')">
               <img src="https://previews.123rf.com/images/martialred/martialred1810/martialred181000014/113393140-add-new-video-or-upload-movie-create-media-line-art-vector-icon-for-apps-and-websites.jpg?fj=1" alt="upload" title="만들기" width=24px height=20px>
             </div>
-            <div class="alert">
+            <div class="alert" onclick="alert('미구현')">
               <img src="./Images/alert.png" alt="alert" title="알림" width=20px height=20px>
             </div>
             <div class="my-page">
-              <img src="https://yt3.ggpht.com/ytc/AMLnZu96se9JtDlaK8AZSABvOuuNvmUhvlj-nlQHLYs4Xdq_0A=s88-c-k-c0x00ffffff-no-rj-mo" alt="my-page"  width=30px height=30px>
+              <img src="https://yt3.ggpht.com/ytc/AMLnZu96se9JtDlaK8AZSABvOuuNvmUhvlj-nlQHLYs4Xdq_0A=s88-c-k-c0x00ffffff-no-rj-mo" alt="my-page" name="my-page" width=30px height=30px>
             </div>
           </div>
         </div>
+
+        <!-- 창 -->
+        <div id="menuWindow" class="js-menu">
+          <div class="menubar">
+            <div class="menu-header">
+              <div class="menu">
+                <img src="https://icons.veryicon.com/png/o/miscellaneous/template-3/menu-59.png" alt="menu" width=30px height=25px name="menu">
+              </div>
+              <div class="logo">
+                <a href="./youtube.html"><img src="./Images/logo.png" alt="logo" title="Youtube 홈" width=91px height= 42px></a>
+              </div>
+            </div>
+
+            <div class="menu-content">
+              <div class="menu-box">
+                <div class="menu-home">홈</div>
+                <div class="menu-search">탐색</div>
+                <div class="menu-shorts">Shorts</div>
+                <div class="menu-subsribe">구독</div>
+              </div>
+              <div class="menu-box">
+                <div class="menu-locker">보관함</div>
+                <div class="menu-history">시청 기록</div>
+                <div class="menu-my-video">내 동영상</div>
+                <div class="menu-later-video">나중에 볼 동영상</div>
+                <div class="menu-good-video">좋아요 표시한 동영상</div>
+              </div>
+              <div class="menu-box">
+                <div class="channel">
+                  에스오디 SOD
+                </div>
+              </div>
+              <div class="menu-box">
+                <div class="menu-movie">영화</div>
+                <div class="menu-game">게임</div>
+                <div class="menu-learning">학습</div>
+                <div class="menu-sport">스포츠</div>
+              </div>
+              <div class="menu-box">
+                <div class="menu-premium">YouTube Premium</div>
+                <div class="menu-studio">크리에이터 스튜디오</div>
+                <div class="menu-music">YouTube Music</div>
+                <div class="menu-kids">YouTube Kids</div>
+                <div class="menu-tv">YouTube TV</div>
+              </div>
+              <div class="menu-box">
+                <div class="menu-settings">게임</div>
+                <div class="menu-game">신고 기록</div>
+                <div class="menu-game">고객센터</div>
+                <div class="menu-game">의견 보내기</div>
+              </div>
+              <div class="menu-box-ex1">
+                정보 보도자료 저작권
+                <br>
+                문의하기 크레에이터 광고
+                <br>
+                개발자
+
+                <br><br>
+                약관 개인정보처리방침
+                <br>
+                정책 및 안전
+                <br>
+                YouTube 작동의 원리
+                <br>
+                새로운 기능 테스트하기
+              </div>
+              <div class="menu-box-ex2">
+                2022 Google LLC
+                <br>
+                CEO: 선다 피차이
+                <br>
+                주소: 1600 Amphitheatre Parkway.
+                <br>
+                Moutain View, CA 94043, USA.
+                <br>
+                전화: 080-822-1450(무료)
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="voiceWindow" class="js-window hidden">
+          <div class="voice-bar">
+            <div class="voice-content">
+              <div class="voice-cancel">
+                <img src="https://pic.onlinewebfonts.com/svg/img_170267.png" alt="cancel" width=15px height=15px>
+              </div>
+              <div class="voice-title">음성으로 검색</div>
+              <div class="voice-ex">
+                음성으로 검색하려면 브라우저 설정으로 이동해 마이크에 대한 액세스를 허용하세요.
+              </div>
+              <div class="voice-img">
+                <span onclick="alert('미구현')"><img src="https://cdn-icons-png.flaticon.com/512/60/60811.png" alt="voice" width=50px></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="mypageWindow" class="hidden">
+          <div class="mypage-bar">
+            <div class="mypage-header">
+              <div class="mypage-img">
+                <img src="https://yt3.ggpht.com/ytc/AMLnZu96se9JtDlaK8AZSABvOuuNvmUhvlj-nlQHLYs4Xdq_0A=s88-c-k-c0x00ffffff-no-rj-mo" alt="mypage" width=45px>
+              </div>
+              <div class="mypage-ex">
+                <div class="mypage-name">
+                  강병준
+                </div>
+                <div class="mypage-settings">
+                  <a href="https://myaccount.google.com/">Google 계정 관리</a>
+                </div>
+              </div>
+            </div>
+            <div class="mypage-content">
+              <div class="mypage-content-box">
+                <div class="mypage-channel">내 채널</div>
+                <div class="mypage-studio">YouTube 스튜디오</div>
+                <div class="mypage-account">계정 전환</div>
+                <div class="mypage-logout">로그아웃</div>
+              </div>
+
+              <div class="mypage-content-box">
+                <div class="mypage-buy">구매 항목 및 멤버십</div>
+                <div class="mypage-data">YouTube의 내 데이터</div>
+              </div>
+
+              <div class="mypage-content-box">
+                <div class="mypage-design">디자인: 기기 테마</div>
+                <div class="mypage-language">언어: 한국어</div>
+                <div class="mypage-mode">제한 모드: 사용 안함</div>
+                <div class="mypage-location">위치: 한국</div>
+                <div class="mypage-keySettings">단축키</div>
+              </div>
+
+              <div class="mypage-content-box">
+                <div class="mypage-setting">설정</div>
+              </div>
+
+              <div class="mypage-content-box">
+                <div class="mypage-center">고객센터</div>
+                <div class="mypage-opinion">의견 보내기</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overlay hidden"></div>
       </div>
 
       <section>
@@ -103,19 +254,21 @@
         <!-- content -->
         <div class="container">
           <div class="lnbNav">
-            <div class="lnbNav-item1">전체</div>
-            <div class="lnbNav-item1">게임</div>
-            <div class="lnbNav-item1">음악</div>
-            <div class="lnbNav-item1">축구</div>
-            <div class="lnbNav-item1">야구</div>
-            <div class="lnbNav-item1">요리</div>
-            <div class="lnbNav-item1">실시간</div>
+            <div id="category" class="lnbNav-item">전체</div>
+            <div id="2">게임</div>
+            <div id="3">음악</div>
+            <div id="4">축구</div>
+            <div id="5">야구</div>
+            <div id="6">요리</div>
+            <div id="7">실시간</div>
+            <div id="8">최근에 업로드된 동영상</div>
+            <div id="9">액션 어드벤처 게임</div>
           </div>
 
           <div class="content">
             <div class="content-item">
               <div class="content-item-img">
-                <img src="http://img.battlepage.com/upload/2020/0713/13015053144a39cc2042211c713f3c5fe2f8ec8c.png" alt="iu">
+                <img src="http://img.battlepage.com/upload/2020/0713/13015053144a39cc2042211c713f3c5fe2f8ec8c.png" alt="iu" name="video">
               </div>
               <div class="content-item-ex">
                 <div class="content-item-icon">
@@ -136,7 +289,7 @@
             </div>
             <div class="content-item">
               <div class="content-item-img">
-                <img src="./Images/naruto1.jpg" alt="suzy">
+                <img src="./Images/naruto1.jpg" alt="suzy" name="video">
               </div>
               <div class="content-item-ex">
                 <div class="content-item-icon">
@@ -157,7 +310,7 @@
             </div>
             <div class="content-item">
               <div class="content-item-img">
-                <img src="https://file.mk.co.kr/meet/neds/2020/06/image_readmed_2020_639631_15928174984251147.jpg" alt="jisoo">
+                <img src="https://file.mk.co.kr/meet/neds/2020/06/image_readmed_2020_639631_15928174984251147.jpg" alt="jisoo" name="video">
               </div>
               <div class="content-item-ex">
                 <div class="content-item-icon">
@@ -178,7 +331,7 @@
             </div>
             <div class="content-item">
               <div class="content-item-img">
-                <img src="https://image.newsis.com/2021/11/01/NISI20211101_0000859131_web.jpg?rnd=20211101115531g" alt="jisoo">
+                <img src="https://image.newsis.com/2021/11/01/NISI20211101_0000859131_web.jpg?rnd=20211101115531g" alt="jisoo" name="video">
               </div>
               <div class="content-item-ex">
                 <div class="content-item-icon">
@@ -200,7 +353,7 @@
 
             <div class="content-item">
               <div class="content-item-img">
-                <img src="./Images/battleground.jpg" alt="alchol">
+                <img src="./Images/battleground.jpg" alt="alchol" name="video">
               </div>
               <div class="content-item-ex">
                 <div class="content-item-icon">
@@ -221,7 +374,7 @@
             </div>
             <div class="content-item">
               <div class="content-item-img">
-                <img src="http://www.wsobi.com/news/photo/202103/116117_76379_5459.jpeg" alt="alchol">
+                <img src="http://www.wsobi.com/news/photo/202103/116117_76379_5459.jpeg" alt="alchol" name="video">
               </div>
               <div class="content-item-ex">
                 <div class="content-item-icon">
@@ -242,7 +395,7 @@
             </div>
             <div class="content-item">
               <div class="content-item-img">
-                <img src="./Images/demon-slayer.jpg" alt="iu">
+                <img src="./Images/demon-slayer.jpg" alt="iu" name="video">
               </div>
               <div class="content-item-ex">
                 <div class="content-item-icon">
@@ -263,7 +416,7 @@
             </div>
             <div class="content-item">
               <div class="content-item-img">
-                <img src="./Images/coin1.png" alt="suzy">
+                <img src="./Images/coin1.png" alt="suzy" name="video">
               </div>
               <div class="content-item-ex">
                 <div class="content-item-icon">
@@ -285,7 +438,7 @@
 
             <div class="content-item">
               <div class="content-item-img">
-                <img src="https://www.blockmedia.co.kr/wp-content/uploads/2021/10/%EC%9D%B8%ED%94%8C%EB%A0%88_%EB%B9%84%ED%8A%B8%EC%BD%94%EC%9D%B8.jpg" alt="alchol">
+                <img src="https://www.blockmedia.co.kr/wp-content/uploads/2021/10/%EC%9D%B8%ED%94%8C%EB%A0%88_%EB%B9%84%ED%8A%B8%EC%BD%94%EC%9D%B8.jpg" alt="alchol" name="video">
               </div>
               <div class="content-item-ex">
                 <div class="content-item-icon">
@@ -306,7 +459,7 @@
             </div>
             <div class="content-item">
               <div class="content-item-img">
-                <img src="https://newsimg.hankookilbo.com/cms/articlerelease/2021/05/17/b41ab909-e0e2-40e8-a36a-4bae809a9024.jpg" alt="iu">
+                <img src="https://newsimg.hankookilbo.com/cms/articlerelease/2021/05/17/b41ab909-e0e2-40e8-a36a-4bae809a9024.jpg" alt="iu" name="video">
               </div>
               <div class="content-item-ex">
                 <div class="content-item-icon">
@@ -331,7 +484,7 @@
               </div>
               <div class="content-item-ex">
                 <div class="content-item-icon">
-                  <img src="https://icon-library.com/images/create-icon-free/create-icon-free-18.jpg" alt="icon">
+                  <img src="https://icon-library.com/images/create-icon-free/create-icon-free-18.jpg" alt="icon" name="video">
                 </div>
                 <div class="content-item-info">
                   <div class="content-item-title">
@@ -348,7 +501,7 @@
             </div>
             <div class="content-item">
               <div class="content-item-img">
-                <img src="./Images/onepiece1.jpg" alt="jisoo">
+                <img src="./Images/onepiece1.jpg" alt="jisoo" name="video">
               </div>
               <div class="content-item-ex">
                 <div class="content-item-icon">
@@ -374,7 +527,7 @@
                 <div class="content-shorts-item">
                   <div class="shorts-item">
                     <div class="shorts-item-img">
-                      <img src="./Images/soccer.jpg" alt="">
+                      <img src="./Images/soccer.jpg" alt="soccer" name="video">
                     </div>
                     <div class="shorts-item-ex">
                       <div class="shorts-item-info">
@@ -394,7 +547,7 @@
                 <div class="content-shorts-item">
                   <div class="shorts-item">
                     <div class="shorts-item-img">
-                      <img src="http://img4.tmon.kr/cdn3/deals/2021/07/15/4500036162/original_4500036162_front_f8dfd_1626343427production.jpg" alt="">
+                      <img src="http://img4.tmon.kr/cdn3/deals/2021/07/15/4500036162/original_4500036162_front_f8dfd_1626343427production.jpg" alt="" name="video">
                     </div>
                     <div class="shorts-item-ex">
                       <div class="shorts-item-info">
@@ -414,7 +567,7 @@
                 <div class="content-shorts-item">
                   <div class="shorts-item">
                     <div class="shorts-item-img">
-                      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Malatang_from_South_Korea.jpg" alt="">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Malatang_from_South_Korea.jpg" alt="" name="video">
                     </div>
                     <div class="shorts-item-ex">
                       <div class="shorts-item-info">
@@ -434,7 +587,7 @@
                 <div class="content-shorts-item">
                   <div class="shorts-item">
                     <div class="shorts-item-img">
-                      <img src="https://file2.nocutnews.co.kr/newsroom/image/2022/05/17/202205170930598262_0.jpg" alt="">
+                      <img src="https://file2.nocutnews.co.kr/newsroom/image/2022/05/17/202205170930598262_0.jpg" alt="" name="video">
                     </div>
                     <div class="shorts-item-ex">
                       <div class="shorts-item-info">
@@ -454,7 +607,7 @@
                 <div class="content-shorts-item">
                   <div class="shorts-item">
                     <div class="shorts-item-img">
-                      <img src="https://src.hidoc.co.kr/image/lib/2019/3/26/20190326140110420_0.jpg" alt="" width=100%>
+                      <img src="https://src.hidoc.co.kr/image/lib/2019/3/26/20190326140110420_0.jpg" alt="" width=100% name="video">
                     </div>
                     <div class="shorts-item-ex">
                       <div class="content-item-info">
@@ -476,7 +629,7 @@
 
             <div class="content-item">
               <div class="content-item-img">
-                <img src="https://previews.123rf.com/images/mathier/mathier1905/mathier190500002/134557216-%EC%8D%B8%EB%84%A4%EC%9D%BC-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%86%EC%9D%8C-%ED%8F%AC%EB%9F%BC-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%B0%8F-%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8%EC%9A%A9-%EC%9E%90%EB%A6%AC-%ED%91%9C%EC%8B%9C%EC%9E%90.jpg?fj=1" alt="alchol">
+                <img src="https://previews.123rf.com/images/mathier/mathier1905/mathier190500002/134557216-%EC%8D%B8%EB%84%A4%EC%9D%BC-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%86%EC%9D%8C-%ED%8F%AC%EB%9F%BC-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%B0%8F-%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8%EC%9A%A9-%EC%9E%90%EB%A6%AC-%ED%91%9C%EC%8B%9C%EC%9E%90.jpg?fj=1" alt="alchol" name="video">
               </div>
               <div class="content-item-ex">
                 video
@@ -484,7 +637,7 @@
             </div>
             <div class="content-item">
               <div class="content-item-img">
-                <img src="https://previews.123rf.com/images/mathier/mathier1905/mathier190500002/134557216-%EC%8D%B8%EB%84%A4%EC%9D%BC-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%86%EC%9D%8C-%ED%8F%AC%EB%9F%BC-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%B0%8F-%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8%EC%9A%A9-%EC%9E%90%EB%A6%AC-%ED%91%9C%EC%8B%9C%EC%9E%90.jpg?fj=1" alt="alchol">
+                <img src="https://previews.123rf.com/images/mathier/mathier1905/mathier190500002/134557216-%EC%8D%B8%EB%84%A4%EC%9D%BC-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%86%EC%9D%8C-%ED%8F%AC%EB%9F%BC-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%B0%8F-%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8%EC%9A%A9-%EC%9E%90%EB%A6%AC-%ED%91%9C%EC%8B%9C%EC%9E%90.jpg?fj=1" alt="alchol" name="video">
               </div>
               <div class="content-item-ex">
                 video
@@ -492,7 +645,7 @@
             </div>
             <div class="content-item">
               <div class="content-item-img">
-                <img src="https://previews.123rf.com/images/mathier/mathier1905/mathier190500002/134557216-%EC%8D%B8%EB%84%A4%EC%9D%BC-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%86%EC%9D%8C-%ED%8F%AC%EB%9F%BC-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%B0%8F-%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8%EC%9A%A9-%EC%9E%90%EB%A6%AC-%ED%91%9C%EC%8B%9C%EC%9E%90.jpg?fj=1" alt="alchol">
+                <img src="https://previews.123rf.com/images/mathier/mathier1905/mathier190500002/134557216-%EC%8D%B8%EB%84%A4%EC%9D%BC-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%86%EC%9D%8C-%ED%8F%AC%EB%9F%BC-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%B0%8F-%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8%EC%9A%A9-%EC%9E%90%EB%A6%AC-%ED%91%9C%EC%8B%9C%EC%9E%90.jpg?fj=1" alt="alchol" name="video">
               </div>
               <div class="content-item-ex">
                 video
@@ -500,7 +653,7 @@
             </div>
             <div class="content-item">
               <div class="content-item-img">
-                <img src="https://previews.123rf.com/images/mathier/mathier1905/mathier190500002/134557216-%EC%8D%B8%EB%84%A4%EC%9D%BC-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%86%EC%9D%8C-%ED%8F%AC%EB%9F%BC-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%B0%8F-%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8%EC%9A%A9-%EC%9E%90%EB%A6%AC-%ED%91%9C%EC%8B%9C%EC%9E%90.jpg?fj=1" alt="alchol">
+                <img src="https://previews.123rf.com/images/mathier/mathier1905/mathier190500002/134557216-%EC%8D%B8%EB%84%A4%EC%9D%BC-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%86%EC%9D%8C-%ED%8F%AC%EB%9F%BC-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%B0%8F-%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8%EC%9A%A9-%EC%9E%90%EB%A6%AC-%ED%91%9C%EC%8B%9C%EC%9E%90.jpg?fj=1" alt="alchol" name="video">
               </div>
               <div class="content-item-ex">
                 video
@@ -508,7 +661,7 @@
             </div>
             <div class="content-item">
               <div class="content-item-img">
-                <img src="https://previews.123rf.com/images/mathier/mathier1905/mathier190500002/134557216-%EC%8D%B8%EB%84%A4%EC%9D%BC-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%86%EC%9D%8C-%ED%8F%AC%EB%9F%BC-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%B0%8F-%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8%EC%9A%A9-%EC%9E%90%EB%A6%AC-%ED%91%9C%EC%8B%9C%EC%9E%90.jpg?fj=1" alt="alchol">
+                <img src="https://previews.123rf.com/images/mathier/mathier1905/mathier190500002/134557216-%EC%8D%B8%EB%84%A4%EC%9D%BC-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%86%EC%9D%8C-%ED%8F%AC%EB%9F%BC-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%B0%8F-%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8%EC%9A%A9-%EC%9E%90%EB%A6%AC-%ED%91%9C%EC%8B%9C%EC%9E%90.jpg?fj=1" alt="alchol" name="video">
               </div>
               <div class="content-item-ex">
                 video
@@ -516,7 +669,7 @@
             </div>
             <div class="content-item">
               <div class="content-item-img">
-                <img src="https://previews.123rf.com/images/mathier/mathier1905/mathier190500002/134557216-%EC%8D%B8%EB%84%A4%EC%9D%BC-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%86%EC%9D%8C-%ED%8F%AC%EB%9F%BC-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%B0%8F-%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8%EC%9A%A9-%EC%9E%90%EB%A6%AC-%ED%91%9C%EC%8B%9C%EC%9E%90.jpg?fj=1" alt="alchol">
+                <img src="https://previews.123rf.com/images/mathier/mathier1905/mathier190500002/134557216-%EC%8D%B8%EB%84%A4%EC%9D%BC-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%86%EC%9D%8C-%ED%8F%AC%EB%9F%BC-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%B0%8F-%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8%EC%9A%A9-%EC%9E%90%EB%A6%AC-%ED%91%9C%EC%8B%9C%EC%9E%90.jpg?fj=1" alt="alchol" name="video">
               </div>
               <div class="content-item-ex">
                 video
@@ -524,7 +677,7 @@
             </div>
             <div class="content-item">
               <div class="content-item-img">
-                <img src="https://previews.123rf.com/images/mathier/mathier1905/mathier190500002/134557216-%EC%8D%B8%EB%84%A4%EC%9D%BC-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%86%EC%9D%8C-%ED%8F%AC%EB%9F%BC-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%B0%8F-%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8%EC%9A%A9-%EC%9E%90%EB%A6%AC-%ED%91%9C%EC%8B%9C%EC%9E%90.jpg?fj=1" alt="alchol">
+                <img src="https://previews.123rf.com/images/mathier/mathier1905/mathier190500002/134557216-%EC%8D%B8%EB%84%A4%EC%9D%BC-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%86%EC%9D%8C-%ED%8F%AC%EB%9F%BC-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%B0%8F-%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8%EC%9A%A9-%EC%9E%90%EB%A6%AC-%ED%91%9C%EC%8B%9C%EC%9E%90.jpg?fj=1" alt="alchol" name="video">
               </div>
               <div class="content-item-ex">
                 video
@@ -532,7 +685,7 @@
             </div>
             <div class="content-item">
               <div class="content-item-img">
-                <img src="https://previews.123rf.com/images/mathier/mathier1905/mathier190500002/134557216-%EC%8D%B8%EB%84%A4%EC%9D%BC-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%86%EC%9D%8C-%ED%8F%AC%EB%9F%BC-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%B0%8F-%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8%EC%9A%A9-%EC%9E%90%EB%A6%AC-%ED%91%9C%EC%8B%9C%EC%9E%90.jpg?fj=1" alt="alchol">
+                <img src="https://previews.123rf.com/images/mathier/mathier1905/mathier190500002/134557216-%EC%8D%B8%EB%84%A4%EC%9D%BC-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%86%EC%9D%8C-%ED%8F%AC%EB%9F%BC-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%B0%8F-%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8%EC%9A%A9-%EC%9E%90%EB%A6%AC-%ED%91%9C%EC%8B%9C%EC%9E%90.jpg?fj=1" alt="alchol" name="video">
               </div>
               <div class="content-item-ex">
                 video
@@ -542,5 +695,12 @@
         </div>
       </section>
     </div>
+
+    <script type="text/javascript" src="./js/search.js"></script>
+    <script type="text/javascript" src="./js/lnb.js"></script>
+    <script type="text/javascript" src="./js/menu.js"></script>
+    <script type="text/javascript" src="./js/voice.js"></script>
+    <script type="text/javascript" src="./js/content.js"></script>
+    <script type="text/javascript" src="./js/mypage.js"></script>
   </body>
 </html>

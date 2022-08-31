@@ -1,0 +1,85 @@
+.js-menu{
+  display: none;
+}
+
+.menubar{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  height: 100vh;
+  background-color: white;
+  padding: 5px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  overflow-y: scroll;
+}
+
+.menu-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 10px 0 10px;
+  margin: 0 15px 0 15px;
+  gap: 15px;
+}
+
+.menu-content{
+  width: auto;
+  height: auto;
+}
+
+.menu-box {
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.menu-box>div{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  height: 50px;
+  padding: 0 24px;
+}
+
+.menu-box>div:hover{
+  background-color: #ccc;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100vh;
+  z-index: 3;
+  overflow: hidden;
+}
+
+.hidden{
+  display: none;
+}
+
+.overflow{
+  overflow: hidden;
+}
+
+.menu-box-ex1{
+  cursor: pointer;
+  font-size: 12px;
+  padding: 15px;
+  margin: 5px;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.menu-box-ex2{
+  font-size: 10px;
+  padding: 15px;
+  margin: 5px;
+  color: rgba(0, 0, 0, 0.5);
+}
